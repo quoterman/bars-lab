@@ -24,9 +24,21 @@
  *
  * @return {String} отформатированная строка.
  */
-//function format(token){
-//	var myArray = /{[0-9]}/.exec(token);
-//}
+ 
+function format(token){
+			var arr = token.match(/\{[0-9]\}/ig);
+			var index;
+			var out = token;
+			for(var iter in arr) {
+				index = Number(arr[iter].charAt(1));
+				if (typeof arguments[index + 1] == 'undefined' ){
+					throw new Error("Invalid arguments count");
+				}else{
+					out = out.replace(arr[iter],arguments[index + 1]);
+				}
+			}
+			return out;
+}
 
 /**
  * Задание 2. Создать функцию repeat.
