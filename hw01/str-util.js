@@ -24,6 +24,9 @@
  *
  * @return {String} отформатированная строка.
  */
+//function format(token){
+//	var myArray = /{[0-9]}/.exec(token);
+//}
 
 /**
  * Задание 2. Создать функцию repeat.
@@ -43,6 +46,22 @@
  *
  * @return {String} Строка с повотрениями.
  */
+ 
+ function repeat(str,count,sep){
+	var out = "";
+	if(arguments.length === 2){
+		for(i = 0; i < count; i++){
+			out += str;
+		}
+	}
+	if(arguments.length === 3){
+		for(i = 0; i < count; i++){
+			out += str + sep;
+		}
+		out = out.substring(0,out.length-1);
+	}
+	return out
+}
 
 /**
  * Задание 3. Создать функцию toGetParams, формирующую из
@@ -57,6 +76,14 @@
  * @return {String} строка параметров.
  */
 
+ function toGetParams(obj){
+		var out = "";
+		for(var key in obj){
+			out += key + "=" + obj[key]+ "&";
+		}
+		out = out.substring(0,out.length-1);
+		return out;
+ }
 /**
  * Задание 4. Создать функцию formatUrl, формирующую из базового url и объекта
  * строку GET-запроса.
@@ -73,6 +100,10 @@
  * @return {String} сформированный url.
  */
 
+ function formatUrl(url, obj){
+	return url + "?" + toGetParams(obj);
+ }
+ 
 /**
  * Задание 5. Создать функцию startsWith, возвращающая true, если строка, переданная
  * в качестве первого аргумента начинается со строки, переданной в качестве второго аргумента,
@@ -91,6 +122,11 @@
  * @return {Boolean} Результат проверки.
  */
 
+ function startsWith(str, prefix){
+	var temp = str.substr(0,prefix.length);
+	return temp === prefix;
+ }
+ 
 /**
  * Задание 6. Создать функцию endsWith, возвращающая true, если строка, переданная
  * в качестве первого аргумента оканчивается на строку, переданную в качестве второго аргумента,
@@ -108,3 +144,8 @@
  *
  * @return {Boolean} Результат проверки.
  */
+ 
+ function endsWith(str, suffix){
+	var temp = str.slice(str.length - suffix.length);
+	return temp === suffix;
+ }
