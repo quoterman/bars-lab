@@ -77,9 +77,9 @@
  */
  
 function nfib(n) {
-  var a = 0, b = 1;
+  var a = 0, b = 1,c;
   for (var i = 3; i <= n; i++) {
-    var c = a + b;
+    c = a + b;
     a = b;
     b = c;
   }          
