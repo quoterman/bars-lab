@@ -1,117 +1,164 @@
 /**
- * hulk - библиотека для манипуляции DOMом.
- * Ниже описаны функции, которые должны присутствовать в данной библиотеке.
- * Реализовать hulk таким образом, чтобы можно было вызывать цепочку функций:
- * @example hulk.select('some-selector').addClass('cls').append('div')
+ 1)строение "библиотеки"?
+ 2)если да то сокрытие реализации?
+ 4)все ли методы должны возвращать объект типа халк
+ 5)возвращается новый набор html элементов? типа халк?
+ 6)обработка всевозможных ошибок
  */
 
-/**
- * @method select
- * Функция, с которой начинается манипуляция dom-объектов.
- * Возвращает hulk-объект, который содержит массив html-элементов, удовлетворяющих переданному селектору.
- * Все дальнейшие манипуляции из цепочки вызовов будут применены к элементам из данной выборки.
- * @param {String} selector css-селектор.
- */
+var hulk = (function() {
+    var set = undefined;
+    var i;
+    var setLen = set.length;
+    return {
+        select: function(selector) {
+            set = document.querySelectorAll(selector);
+            return this;
+        },
 
-/**
- * @method addClass
- * Добавляет классы каждому элементу выборки.
- * @param {String} clsNames Имена классов, разделенных пробелом.
- */
+        addClass: function(clsNames) {
+            for(i = 0;i < setLen; i++){
+                set[i].classList.add(clsNames);
+            }
+            return this;
+        },
 
-/**
- * @method append
- * Добавляет дочерний html-элемент каждому элементу выборки.
- * @param {String} Имя тега, добавляемого элемента.
- */
+        append: function (tag) {
+            var newTag = document.createElement(tag);
+            for (var i = 0; i < setLen; i++) {
+                set[i].appendChild(newTag);
+            }
+            return this;
+        },
 
-/**
- * @method attr Если при вызове передается один аргумент, возвращается значение атрибута,
- * если передается два аргумента, то атрибуту присваивается значение второго аргумента.
- * @param {String} attrName Имя атрибута.
- * @param {Number/String} [value] Значение атрибута.
- */
+        attr: function() {
+            if (arguments.length == 1){
+            }else{
+                if (arguments.length == 2){
+                    for (var i = 0; i < setLen; i++) {
+                        set[i].setAttribute(arguments[0], arguments[1]);
+                    }
+                }else{
+                    //??????
+                }
+            }
+            return this;
+        },
 
-/**
- * @method children
- * Возвращает всех непосредственных наследников первого элемента из выборки, обернутых в hulk-объект.
- */
+        children: function() {
+            var childNodes = set[0].childNodes;
+            for(var i = 0,l = childNodes.length; i < l; i++) {
+                alert(childNodes[i]);
+            }
+            return this;
+        },
 
-/**
- * @method css Если при вызове передается один аргумент, возвращается значение css-атрибута,
- * если передается два аргумента, то css-атрибуту присваивается значение второго аргумента.
- * @param {String} cssAttrName Имя css-атрибута.
- * @param {Number/String} value Значение css-атрибута.
- */
+        css: function() {
+            var style = [];
+            if (arguments.length == 1){
+                for (var i = 0; i < setLen; i++) {
+                    style[i] = set[i].style.arguments[0];
+                }
+            }else{
+                if (arguments.length == 2){
+                    for (var i = 0; i < setLen; i++) {
+                        set[i].style.arguments[0] = arguments[1];
+                    }
+                }else{
+                    //??????
+                }
+            }
+            return style;
+        },
 
-/**
- * @method empty
- * Очищает все внутреннее содержимое элементов из выборки.
- */
+        empty: function() {
+            for (var i = 0; i < setLen; i++) {
+                set[i].innerHTML = "";
+            }
+            return this;
+        },
 
-/**
- * @method find
- * Производит выборку по дочерним элементам выборки, удовлетворяющим переданному селектору.
- * @param {String} selector css-селектор для выборки.
- */
+        find: function(selector) {
+            var findSet = [];
+            for (var i = 0; i < setLen; i++) {
+                findSet[i] = set[i].querySelectorAll(selector);
+            }
+            return this;
+        },
 
-/**
- * @method hasClass
- * Проверяет наличие класса для элементов выборки.
- * @param {String} className Имя класса, наличие которого проверяется.
- * @return {Boolean} Возвращает true, если все элементы выборки содержат переданный класс.
- */
+        hasClass: function(className) {
+            i = 0;
+            while(set[i].classList.contains(className)){
+                i++;
+            }
+            if(i === len){
+                return true;
+            }else{
+                return false;
+            }
+        },
 
-/**
- * @method html
- * Возвращает html-содержимое первого элемента выборки.
- * @return {HTMLElement} html-содержимое первого элемента из выборки.
- */
+        html: function() {
+            return set[0].innerHTML;
+        },
 
-/**
- * @method on
- * Добавляет подписчика на событие для элементов выборки.
- * @param {String} eventName Имя события, на которое будет производиться подписка.
- * @param {Function} func Функция-подписчик.
- */
+        on: function(eventName, func) {
+            for (var i = 0; i < setLen; i++) {
+                set[i].eventName = func;
+            }
+            return this;
+        },
 
-/**
- * @method parent
- * Возвращает родительский элемент первого элемента выборки.
- */
+        parent: function() {
+            return set[0].parentNode;
+        },
 
-/**
- * @method remove
- * Удаляет из документа все DOM-элементы выборки.
- */
+        remove: function() {
+            for (var i = 0; i < setLen; i++){
+                set[i].parentNode.removeChild(set[i]);
+            }
+            return this;
+        },
 
-/**
- * @method removeAttr
- * Удаляет атрибут из элементов выборки.
- * @param {String} attrName Удаляемый атрибут.
- */
 
-/**
- * @method removeClass
- * Удаляет css-классы для элементов выборки.
- * @param {String} clsNames Имена классов, разделенных пробелом.
- */
+        removeAttr: function(attrName) {
+            for(var i = 0; i < setLen; i++) {
+                set[i].removeAttribute(attrName);
+            }
+            return this;
+        },
 
-/**
- * @method toggleClass
- * Добавляет (если классы отсутствуют) и удаляет (если классы присутствуют) у элементов выборки.
- * @param {String} clsNames Имена классов, разделенных пробелом.
- */
+        removeClass: function(clsNames) {
+            for(var i = 0; i < setLen; i++) {
+                set[i].classList.remove(clsNames);
+            }
+            return this;
+        },
 
-/**
- * @method unbind
- * Удаляет подписчика на событие для элементов выборки.
- * @param {String} eventName Имя события, для которого будет производиться удаление подписчика.
- * @param {Function} func Удаляемая функция-подписчик.
- */
+        toggleClass: function(clsNames) {
+            for(var i = 0; i < setLen; i++) {
+                set[i].classList.toggle(clsNames);
+            }
+            return this;
+        },
 
-/**
- * @method wrap
- * Оборачивает каждый элемент выборки тегом, имя которого передано в качестве первого аргумента.
- * @param {String} tagName Имя тега.
- */
+
+        unbind: function(eventName, func) {
+            for(var i = 0; i < setLen; i++) {
+                set[i].removeEventListener(eventName, func, false);
+            }
+            return this;
+        },
+
+        wrap: function(tagName) {
+            var temp;
+            for(var i = 0; i < setLen; i++) {
+                temp = document.createElement(tagName);
+                set[i].parentNode.appendChild(temp);
+                temp.appendChild(set[i]);
+            }
+            return this;
+        }
+
+    };
+})();
