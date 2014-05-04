@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="10b7a25d-8de6-43de-9c78-1f079c091253" name="Default" comment="" />
+=======
+    <list default="true" id="8c6c0f09-dc0e-4b51-a544-d881e45fe73d" name="Default" comment="" />
+>>>>>>> 1ae00b6d23fcecb3a4192aa05dd4515f70e4b97f
     <ignored path="hw03.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,6 +30,7 @@
       <file leaf-file-name="hulk.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hulk.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="116" column="3" selection-start="3468" selection-end="3468" vertical-scroll-proportion="0.942953" vertical-offset="1410" max-vertical-offset="2074">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -38,6 +43,9 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="0" selection-start="490" selection-end="490" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="901">
+=======
+            <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2754">
+>>>>>>> 1ae00b6d23fcecb3a4192aa05dd4515f70e4b97f
               <folding />
             </state>
           </provider>
@@ -58,8 +66,15 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="width" value="1366" />
     <option name="height" value="728" />
+=======
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1278" />
+    <option name="height" value="726" />
+>>>>>>> 1ae00b6d23fcecb3a4192aa05dd4515f70e4b97f
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -87,6 +102,10 @@
       <sortByType />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+>>>>>>> 1ae00b6d23fcecb3a4192aa05dd4515f70e4b97f
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -95,6 +114,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+<<<<<<< HEAD
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="hw03" />
@@ -108,10 +128,15 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+=======
+        </subPane>
+      </pane>
+>>>>>>> 1ae00b6d23fcecb3a4192aa05dd4515f70e4b97f
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -173,18 +198,29 @@
       <JdkChoice value="FROM_MODULE" />
       <method />
     </configuration>
+=======
+  </component>
+  <component name="RunManager">
+>>>>>>> 1ae00b6d23fcecb3a4192aa05dd4515f70e4b97f
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="10b7a25d-8de6-43de-9c78-1f079c091253" name="Default" comment="" />
       <created>1396185198286</created>
       <updated>1396185198286</updated>
+=======
+      <changelist id="8c6c0f09-dc0e-4b51-a544-d881e45fe73d" name="Default" comment="" />
+      <created>1399216525631</created>
+      <updated>1399216525631</updated>
+>>>>>>> 1ae00b6d23fcecb3a4192aa05dd4515f70e4b97f
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="0" width="1366" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
@@ -205,6 +241,28 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+=======
+    <frame x="1" y="1" width="1278" height="726" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24979855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+>>>>>>> 1ae00b6d23fcecb3a4192aa05dd4515f70e4b97f
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -226,6 +284,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hulk.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="9" column="30" selection-start="0" selection-end="3468" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="2074">
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -246,10 +305,14 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="490" selection-end="490" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="901">
+=======
+        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2754">
+>>>>>>> 1ae00b6d23fcecb3a4192aa05dd4515f70e4b97f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$USER_HOME$/js/HW-2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="625" selection-end="625" vertical-scroll-proportion="0.942953" vertical-offset="33" max-vertical-offset="697">
@@ -266,6 +329,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 1ae00b6d23fcecb3a4192aa05dd4515f70e4b97f
   </component>
 </project>
 

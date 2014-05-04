@@ -56,8 +56,8 @@
  *      var myClass = Odin.create('MyClass');
  *      myClass.greeting(); // В консоли должно быть напечатано 'Bonjour, MyClass'
  *
- * @param className Имя класса
- * @param config Объект, содержащий конфигурацию объявляемого класса.
+ * @param {String} className Имя класса
+ * @param {Object} config Объект, содержащий конфигурацию объявляемого класса.
  */
 
 
@@ -84,8 +84,8 @@ function Class(a){
 /**
  * @method Odin.create
  * Создание экземпляра класса.
- * @param className Имя класса
- * @params config Объект, содержащий конфигурацию создаваемого экземпляра.
+ * @param {String} className Имя класса
+ * @params {Object} config Объект, содержащий конфигурацию создаваемого экземпляра.
  * При создании объекта будет передан в конструктор класса.
  * @example
  *     Odin.create('MyClass', {name: 'Odin'});
