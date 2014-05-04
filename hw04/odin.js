@@ -8,6 +8,19 @@
  * @method Odin.def
  * Объявление класса.
  * @example
+ *
+ *      class MyClass{
+ *          public String name;
+ *
+ *          public MyClass(name){
+ *              this.name = name;
+ *          }
+ *
+ *      }
+ *
+ *
+ *
+ *
  *      // Объявление класса
  *      Odin.def('MyClass', {
  *			// Конструктор класса
@@ -46,6 +59,27 @@
  * @param className Имя класса
  * @param config Объект, содержащий конфигурацию объявляемого класса.
  */
+
+
+Odin = {
+
+    def : function(className, config){
+        window[className] = function(){
+            this.name = config.fields.name;
+            config.constructor();
+            this.name = ;
+
+        }
+    }
+};
+
+
+
+
+function Class(a){
+    this.a = a;
+}
+
 
 /**
  * @method Odin.create
